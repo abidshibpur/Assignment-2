@@ -1,3 +1,4 @@
+
 header {
     display: flex;
     justify-content: space-between;
@@ -14,21 +15,6 @@ header {
 .sign img {
     width: 30px; 
     margin-right: 10px;
-}
-.color-1{
-    color:#FEA301;
-}
-.color-2{
-   color:  #05D4DF;
-
-}
-
-.color-3{
-    color:#05D4DF ;
-}
-
-.color-4{
-    color:#5D58EF;
 }
 
 .desktop-nav ul {
@@ -49,7 +35,7 @@ header {
 }
 
 .desktop-nav ul li a.contact-btn {
-    background-color: #ffa500; 
+    background-color: #ffa500;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -78,25 +64,39 @@ header {
     border-radius: 2px;
 }
 
-/* for small device */
+
+.color-1{
+    color: #FEA301;
+}
+
+.color-2{
+color: #FEA301;
+}
+.color-3{
+color: #05D4DF;
+}
+.color-4{
+color: #5D58EF;
+}
+
+/* for small devie */
 @media screen and (max-width: 576px) {
-    .desktop-nav  {
-        display: none;
+    .desktop-nav {
+        display: none; 
     }
 
     .mobile-nav {
         display: block; 
     }
-    
 }
 
 /* for big device */
-@media  screen and (min-width: 992px) {
+@media screen and (min-width: 577px) {
     .desktop-nav {
         display: flex; 
     }
 
     .mobile-nav {
-        display: none;   }
-
+        display: none; 
+    }
 }
