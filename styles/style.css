@@ -1,0 +1,102 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+}
+
+.sign img {
+    width: 30px; 
+    margin-right: 10px;
+}
+.color-1{
+    color:#FEA301;
+}
+.color-2{
+   color:  #05D4DF;
+
+}
+
+.color-3{
+    color:#05D4DF ;
+}
+
+.color-4{
+    color:#5D58EF;
+}
+
+.desktop-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.desktop-nav ul li {
+    margin-left: 20px;
+}
+
+.desktop-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.desktop-nav ul li a.contact-btn {
+    background-color: #ffa500; 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.mobile-nav {
+    display: none; 
+}
+
+.hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger-btn span {
+    background-color: #333;
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* for small device */
+@media screen and (max-width: 576px) {
+    .desktop-nav  {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block; 
+    }
+    
+}
+
+/* for big device */
+@media  screen and (min-width: 992px) {
+    .desktop-nav {
+        display: flex; 
+    }
+
+    .mobile-nav {
+        display: none;   }
+
+}
