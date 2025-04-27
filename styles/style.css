@@ -1,4 +1,9 @@
 
+html, body {
+  overflow-x: hidden;
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -184,10 +189,6 @@ body {
 /* part 4 */
 
 
-* {
-  box-sizing: border-box;
-}
-
 
 
 .part-4 {
@@ -264,8 +265,92 @@ body {
 }
 
 
+
+
+/* part 5 */
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #00bfff;
+  padding: 40px 20px;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-sub-1, .footer-sub-2, .footer-sub-3 {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px 0;
+}
+
+.footer-sub-1 .logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-sub-1 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-sub-1 p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-sub-2 h3, .footer-sub-3 h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-sub-2 ul {
+  list-style: none;
+}
+
+.footer-sub-2 ul li {
+  margin-bottom: 10px;
+}
+
+.footer-sub-2 ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-sub-2 ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
 /* for small devie */
 @media screen and (max-width: 576px) {
+
     .desktop-nav {
         display: none; 
     }
@@ -304,6 +389,23 @@ body {
       .small-cards {
         width: 100%;
       }
+
+
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .footer-sub-1, .footer-sub-2, .footer-sub-3 {
+        margin: 10px 0;
+    }
+  
+    .social-icons {
+        justify-content: center;
+    }
+
+
 
     }
 
