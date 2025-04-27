@@ -220,9 +220,6 @@ body {
 }
 
 
-
-
-
 .small-cards {
   flex: 1 1 55%;
   display: grid;
@@ -266,18 +263,6 @@ body {
   
 }
 
-/* Responsive - hide big card on mobile */
-@media screen and (max-width: 768px) {
-  
-
-  
-}
-
-
-
-
-
-  
 
 /* for small devie */
 @media screen and (max-width: 576px) {
